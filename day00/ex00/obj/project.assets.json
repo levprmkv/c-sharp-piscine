@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/wtandoor/c#piscine/day00/Program/Program.csproj",
+      "projectUniqueName": "/Users/wtandoor/c#piscine/day00/ex00/Program.csproj",
       "projectName": "Program",
-      "projectPath": "/Users/wtandoor/c#piscine/day00/Program/Program.csproj",
+      "projectPath": "/Users/wtandoor/c#piscine/day00/ex00/Program.csproj",
       "packagesPath": "/Users/wtandoor/.nuget/packages/",
-      "outputPath": "/Users/wtandoor/c#piscine/day00/Program/obj/",
+      "outputPath": "/Users/wtandoor/c#piscine/day00/ex00/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/wtandoor/.nuget/NuGet/NuGet.Config"

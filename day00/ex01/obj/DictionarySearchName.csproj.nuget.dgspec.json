@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/wtandoor/c#piscine/DictionarySearchName/DictionarySearchName.csproj": {}
+    "/Users/wtandoor/c#piscine/day00/ex01/DictionarySearchName.csproj": {}
   },
   "projects": {
-    "/Users/wtandoor/c#piscine/DictionarySearchName/DictionarySearchName.csproj": {
+    "/Users/wtandoor/c#piscine/day00/ex01/DictionarySearchName.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/wtandoor/c#piscine/DictionarySearchName/DictionarySearchName.csproj",
+        "projectUniqueName": "/Users/wtandoor/c#piscine/day00/ex01/DictionarySearchName.csproj",
         "projectName": "DictionarySearchName",
-        "projectPath": "/Users/wtandoor/c#piscine/DictionarySearchName/DictionarySearchName.csproj",
+        "projectPath": "/Users/wtandoor/c#piscine/day00/ex01/DictionarySearchName.csproj",
         "packagesPath": "/Users/wtandoor/.nuget/packages/",
-        "outputPath": "/Users/wtandoor/c#piscine/DictionarySearchName/obj/",
+        "outputPath": "/Users/wtandoor/c#piscine/day00/ex01/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/wtandoor/.nuget/NuGet/NuGet.Config"

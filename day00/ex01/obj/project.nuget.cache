@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UoPfuSePTd90ttJEmqAwKY6n0zMcchhS0NJtL+GGTbACFrbHSmtXVcv1it5xszOWnKJHm0pgZgIyNuXWN32e7A==",
+  "dgSpecHash": "ei+xIEXxBQXwWkRJ4ZghPPnaMYNQApHy4cCx5JzMBocEyaIrauclXq8ez7ChKWvTEIyi8Ij8bdwDZwuWfQ0eEA==",
   "success": true,
-  "projectFilePath": "/Users/wtandoor/c#piscine/DictionarySearchName/DictionarySearchName.csproj",
+  "projectFilePath": "/Users/wtandoor/c#piscine/day00/ex01/DictionarySearchName.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
