@@ -30,22 +30,53 @@ namespace DictionarySearchName
 				j = 1;
 				while (j <= s2.Length)
 				{
-					diff = (s1[i - 1] == s2[j - 1]) ? 0 : 1;
+					if (s1[i - 1] == s2[j - 1])
+						diff = 0;
+					else
+						diff = 1;
 					m[i, j] = Math.Min(Math.Min(m[i - 1, j] + 1, m[i, j - 1] + 1), m[i - 1, j - 1] + diff);
 					j++;
 				}
-
 				i++;
 			}
 
 			return m[s1.Length, s2.Length];
 		}
 
+		static int CountNeededLetters(string name)
+		{
+			int i;
+			int len;
+			i = 0;
+			len = name.Length;
+			while (name[i] == ' ')
+				i++;
+			while (name[len - 1] == ' ')
+				len--;
+			return (len - i);
+		}
+
+		static string StrTrim(string name, int count_needed_letters)
+		{
+			string new_name;
+			int i;
+			int len;
+			i = 0;
+			len = name.Length;
+			while (name[i] == ' ')
+				i++;
+			while (name[len - 1] == ' ')
+				len--;
+			new_name = name.Substring(i, len - i);
+			Console.WriteLine(new_name);
+			return (new_name);
+		}
 		static void Main(string[] args)
 		{
 			int i;
 			int check;
 			int distance_levenstein;
+			int count_needed_letters;
 			string button;
 			string name;
 			string model_name;
@@ -59,6 +90,9 @@ namespace DictionarySearchName
 				Console.WriteLine("Your name was not found.");
 				return;
 			}
+
+			count_needed_letters = CountNeededLetters(name);
+			name = StrTrim(name, count_needed_letters);
 			while (check < 3)
 			{
 				i = 0;
@@ -74,13 +108,16 @@ namespace DictionarySearchName
 						}
 						Console.WriteLine("Did you mean \"" + line[i] + "\"Y/N");
 						button = Console.ReadLine();
+						while (button != "Y" && button != "N")
+						{
+							Console.WriteLine("Did you mean \"" + line[i] + "\"Y/N");
+							button = Console.ReadLine();
+						}
 						if (button == "Y")
 						{
 							Console.WriteLine("Hello, " + line[i] + "!");
 							return;
 						}
-						else if (button != "N")
-							return;
 					}
 					i++;
 				}
