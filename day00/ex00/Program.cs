@@ -127,16 +127,16 @@ namespace Program
             double decrease_in_term;
             int    term;
             int    selectedMonth; 
-            if (args != 5) 
+            if (args.Length != 5) 
             { 
                 Console.WriteLine("Ошибка ввода. Проверьте входные данные и повторите запрос.");
                 return;
             }
-            Double.TryParse(args[0], out sum); //сумма кредита
-            Double.TryParse(args[1], out rate); //процентная ставка
-            Double.TryParse(args[4], out payment); //сумма досрочного платежа
-            Int32.TryParse(args[2], out term); //количество месяцев кредита
-            Int32.TryParse(args[3], out selectedMonth); //номер месяца кредита, когда вносится досрочный платеж
+            Double.TryParse(args[0], out sum);
+            Double.TryParse(args[1], out rate);
+            Double.TryParse(args[4], out payment);
+            Int32.TryParse(args[2], out term);
+            Int32.TryParse(args[3], out selectedMonth);
             if (sum <= 0 || rate <= 0 || payment < 0 || term <= 0 || selectedMonth <= 0 || payment >= sum || term < selectedMonth)
             { 
                 Console.WriteLine("Ошибка ввода. Проверьте входные данные и повторите запрос.");
